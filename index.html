@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Decodificador</title>
+</head>
+<body>
+  <img class="img__logo" id="logo" src="./img/img1(logo).svg" alt="Logo da Alura">
+  <main>
+    <form>
+      <textarea class="caixa__texto" id="input-text" placeholder="Digite seu texto"></textarea>
+      <p class="txt__info">
+        <img class="img__info" src="./img/img2(informacao).svg" alt="logo de informação">
+        Apenas letras minúsculas e sem acento.
+      </p>
+      <div class="btn__codificar__decodificar">
+        <button class="btn__codificar" type="submit" id="codificar">Criptografar</button>
+        <button class="btn__decodificar" type="submit" id="decodificar">Descriptografar</button>
+      </div>
+    </form>
+  </main>
+  <aside>
+    <img class="img__garoto" src="./img/img4(garoto).jpg" alt="Imagem de um menino olhando um diamante numa lupa">
+    <strong>Nenhuma mensagem encontrada</strong>
+    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+  </aside>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

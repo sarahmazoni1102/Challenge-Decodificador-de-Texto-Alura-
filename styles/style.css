@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body, button, textarea, input{
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: #F3F5FC;
+  color: #0A3871;
+  display: grid;
+  grid-template-columns: 120px 1fr 350px;
+  gap: 8rem;
+  padding: 1rem;
+}
+
+/*Main*/
+.img__logo
+  {
+    width: 120px; 
+    height: 48px;
+  }
+
+.caixa__texto{
+  resize: none;
+  margin-top: 12.8rem;
+  width: 100%;
+  height: 340px;
+  font-size: 3.2rem;
+  color: #0A3871;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  line-height: 150%;
+}
+
+.caixa__texto::placeholder{
+  color: #0A3871;
+}
+
+.img__info
+  {
+    width: 16px; 
+    height: 16px;
+  }
+
+.txt__info{
+  font-size: 12px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #495057;
+}
+
+.btn__codificar__decodificar{
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.btn__codificar{
+  font-size: 16px;
+  flex: 1;
+  padding: 2.4rem;
+  background-color: #0A3871;
+  border-radius: 24px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.btn__decodificar{
+  font-size: 16px;
+  flex: 1;
+  padding: 2.4rem;
+  background-color: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
+
+/*Aside*/
+.img__garoto
+  {
+    width: 336px; 
+    height: 304px;
+  }
+
+aside{
+  background-color: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+  border-radius: 32px;
+  padding: 3.2rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+aside strong{
+  margin: 3.5rem 0rem 1.6rem 0rem;
+  color: #343A40;
+  font-size: 2.4rem;
+}
+
+aside span{
+  color: #495057;
+}
+
+aside #input-text-copy{
+  flex: 1;
+  width: 100%;
+  color: #495057;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: start;
+  word-wrap: break-word;
+}
+
+aside #button-copy{
+  background-color: transparent;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  border-radius: 24px;
+  padding: 2.4rem;
+  width: 100%;
+  margin-top: 3.2rem;
+}
+
+/*telas responsivas*/
+@media(max-width: 1070px){
+  body{
+    gap: 1.5rem;
+    padding-left: 0rem;
+  }
+}
+
+/* Tela Tablet */
+@media(max-width: 900px){
+  #logo{
+    margin-left: -4.4rem;
+    margin-top: 3.3rem;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    padding: 4rem;
+  }
+
+  main{
+    margin-top: -6rem;
+  }
+
+  aside strong{
+    margin: 0rem 0rem 1.6rem 0rem;
+    
+  }
+
+  aside img{
+    display: none;
+  }
+
+}
+
+/* Tela de Celular */
+@media(max-width: 465px){
+  form .btn__codificar__decodificar{
+    flex-direction: column;
+  }
+
+  form button{
+    width: 100%;
+  }
+}
